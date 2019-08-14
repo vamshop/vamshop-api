@@ -42,15 +42,16 @@ module.exports = {
 
 	// smpt server parameters
 	smtpServer: {
-		host: process.env.SMTP_HOST || '',
-		port: process.env.SMTP_PORT || 587,
+		host: process.env.SMTP_HOST || 'localhost',
+		port: process.env.SMTP_PORT || 25,
 		secure: process.env.SMTP_SECURE || false,
-		user: process.env.SMTP_USER || '',
+      rejectUnhauthorized: false,
+		user: process.env.SMTP_USER || 'vam',
 		pass: process.env.SMTP_PASS || '',
-		fromName: process.env.SMTP_FROM_NAME || '',
-		fromAddress: process.env.SMTP_FROM_ADDRESS || ''
+		fromName: process.env.SMTP_FROM_NAME || 'VamShop',
+		fromAddress: process.env.SMTP_FROM_ADDRESS || 'vam@test.com'
 	},
-
+    
 	// key to sign tokens
 	jwtSecretKey: process.env.JWT_SECRET_KEY || '-',
 
@@ -58,7 +59,7 @@ module.exports = {
 	cookieSecretKey: process.env.COOKIE_SECRET_KEY || '-',
 
 	// store UI language
-	language: process.env.LANGUAGE || 'en',
+	language: process.env.LANGUAGE || 'ru',
 
 	// used by API
 	orderStartNumber: 1000,
@@ -69,3 +70,5 @@ module.exports = {
 
 	developerMode: process.env.DEVELOPER_MODE || true
 };
+
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";﻿

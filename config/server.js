@@ -1,3 +1,5 @@
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+process.env.LANGUAGE = 'ru';
 // config used by server side only
 const dbHost = process.env.DB_HOST || '127.0.0.1';
 const dbPort = process.env.DB_PORT || 27017;
@@ -45,13 +47,13 @@ module.exports = {
 		host: process.env.SMTP_HOST || 'localhost',
 		port: process.env.SMTP_PORT || 25,
 		secure: process.env.SMTP_SECURE || false,
-      rejectUnhauthorized: false,
+		rejectUnhauthorized: false,
 		user: process.env.SMTP_USER || 'vam',
 		pass: process.env.SMTP_PASS || '',
 		fromName: process.env.SMTP_FROM_NAME || 'VamShop',
 		fromAddress: process.env.SMTP_FROM_ADDRESS || 'vam@test.com'
 	},
-    
+
 	// key to sign tokens
 	jwtSecretKey: process.env.JWT_SECRET_KEY || '-',
 
@@ -59,7 +61,7 @@ module.exports = {
 	cookieSecretKey: process.env.COOKIE_SECRET_KEY || '-',
 
 	// store UI language
-	language: process.env.LANGUAGE || 'ru',
+	language: process.env.LANGUAGE || 'en',
 
 	// used by API
 	orderStartNumber: 1000,
@@ -70,5 +72,3 @@ module.exports = {
 
 	developerMode: process.env.DEVELOPER_MODE || true
 };
-
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";﻿

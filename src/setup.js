@@ -145,7 +145,7 @@ const addAllProducts = async db => {
 			slug: 'product-a',
 			category_id: catA.insertedId,
 			regular_price: 950,
-			stock_quantity: 1,
+			stock_quantity: 999,
 			enabled: true,
 			discontinued: false,
 			attributes: [
@@ -159,7 +159,7 @@ const addAllProducts = async db => {
 			slug: 'product-b',
 			category_id: catA.insertedId,
 			regular_price: 1250,
-			stock_quantity: 1,
+			stock_quantity: 999,
 			enabled: true,
 			discontinued: false,
 			attributes: [

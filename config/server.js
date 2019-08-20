@@ -70,5 +70,5 @@ module.exports = {
 	// for production: recommended salRounds > 12
 	saltRounds: process.env.SALT_ROUNDS || 12,
 
-	developerMode: process.env.DEVELOPER_MODE || true
+	developerMode: process.env.DEVELOPER_MODE || false
 };

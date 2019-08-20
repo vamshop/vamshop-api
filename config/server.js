@@ -1,3 +1,6 @@
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+process.env.LANGUAGE = 'en';
+
 // config used by server side only
 const dbHost = process.env.DB_HOST || '127.0.0.1';
 const dbPort = process.env.DB_PORT || 27017;
@@ -70,6 +73,3 @@ module.exports = {
 
 	developerMode: process.env.DEVELOPER_MODE || true
 };
-
-//process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-//process.env.LANGUAGE = 'ru';

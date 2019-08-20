@@ -1,5 +1,3 @@
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-process.env.LANGUAGE = 'ru';
 // config used by server side only
 const dbHost = process.env.DB_HOST || '127.0.0.1';
 const dbPort = process.env.DB_PORT || 27017;
@@ -70,5 +68,8 @@ module.exports = {
 	// for production: recommended salRounds > 12
 	saltRounds: process.env.SALT_ROUNDS || 12,
 
-	developerMode: process.env.DEVELOPER_MODE || false
+	developerMode: process.env.DEVELOPER_MODE || true
 };
+
+//process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+//process.env.LANGUAGE = 'ru';

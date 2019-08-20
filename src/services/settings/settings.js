@@ -12,7 +12,7 @@ const ThemeAssetsPath = `${settings.assetServer.themeImageUploadPath}`;
 class SettingsService {
 	constructor() {
 		this.defaultSettings = {
-			store_name: 'Cezerin',
+			store_name: 'Store Name',
 			domain: '',
 			logo_file: 'logo.png',
 			language: 'en',

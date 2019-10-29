@@ -1,40 +1,33 @@
 {
-  "name": "cezerin2",
+  "name": "vamshop-api",
   "version": "0.35.0",
-  "description": "Cezerin2 is React and Node.js based eCommerce platform. https://cezerin.com",
+  "description": "VamShop is React and Node.js based eCommerce platform. https://vamshop.com",
   "keywords": [
-    "cezerin2",
-    "cezerin",
+    "vamshop",
+    "vamshop-api",
+    "react",
     "ecommerce",
     "shopping cart",
     "shop",
     "cms"
   ],
-  "homepage": "https://cezerin.com",
-  "bugs": "https://github.com/cezerin2/cezerin2/issues",
+  "homepage": "https://vamshop.com",
+  "bugs": "https://github.com/vamshop/vamshop-api/issues",
   "license": "MIT",
   "author": {
-    "name": "Restmount <jsonmount@gmail.com>",
-    "url": "https://github.com/restmount"
+    "name": "VamShop <vamshop@gmail.com>",
+    "url": "https://github.com/vamshop"
   },
   "contributors": [
     {
-      "name": "Luke Busstra <luke.busstra@gmail.com>",
-      "url": "https://github.com/lubuss"
-    },
-    {
-      "name": "Restmount <jsonmount@gmail.com>",
-      "url": "https://github.com/restmount"
-    },
-    {
-      "name": "Sergey Onufrienko <sergey@onufrienko.com>",
-      "url": "https://github.com/sonufrienko"
+      "name": "VamShop <vamshop@gmail.com>",
+      "url": "https://github.com/vamshop"
     }
   ],
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cezerin2/cezerin2"
+    "url": "https://github.com/vamshop/vamshop-api"
   },
   "scripts": {
     "setup": "node -r esm src/setup.js",

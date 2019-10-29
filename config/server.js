@@ -1,5 +1,5 @@
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-process.env.LANGUAGE = 'en';
+process.env.LANGUAGE = 'ru';
 
 // config used by server side only
 const dbHost = process.env.DB_HOST || '127.0.0.1';

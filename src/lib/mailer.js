@@ -8,20 +8,20 @@ const SMTP_FROM_CONFIG_FILE = {
 	host: settings.smtpServer.host,
 	port: settings.smtpServer.port,
 	secure: settings.smtpServer.secure,
-	//auth: {
-		//user: settings.smtpServer.user,
-		//pass: settings.smtpServer.pass
-	//}
+	auth: {
+		user: settings.smtpServer.user,
+		pass: settings.smtpServer.pass
+	}
 };
 
 const getSmtpFromEmailSettings = emailSettings => ({
 	host: emailSettings.host,
 	port: emailSettings.port,
 	secure: emailSettings.port === 465,
-	//auth: {
-		//user: emailSettings.user,
-		//pass: emailSettings.pass
-	//}
+	auth: {
+		user: emailSettings.user,
+		pass: emailSettings.pass
+	}
 });
 
 const getSmtp = emailSettings => {

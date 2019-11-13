@@ -32,7 +32,7 @@ module.exports = {
 	// assest
 	assetServer: {
 		type: process.env.ASSETS_TYPE || 'local', // 'local' | 's3'
-		domain: process.env.ASSETS_BASE_URL || 'http://localhost:3003', // add localBasePath to S3 domain
+		domain: process.env.ASSETS_BASE_URL || 'http://localhost:3001', // add localBasePath to S3 domain
 		localBasePath: 'public/content',
 		categoriesUploadPath: 'images/categories',
 		productsUploadPath: 'images/products',

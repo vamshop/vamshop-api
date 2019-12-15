@@ -1,6 +1,3 @@
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-process.env.LANGUAGE = 'ru';
-
 // config used by server side only
 const dbHost = process.env.DB_HOST || '127.0.0.1';
 const dbPort = process.env.DB_PORT || 27017;
@@ -45,14 +42,13 @@ module.exports = {
 
 	// smpt server parameters
 	smtpServer: {
-		host: process.env.SMTP_HOST || 'localhost',
-		port: process.env.SMTP_PORT || 25,
+		host: process.env.SMTP_HOST || '',
+		port: process.env.SMTP_PORT || 587,
 		secure: process.env.SMTP_SECURE || false,
-		rejectUnhauthorized: false,
-		user: process.env.SMTP_USER || 'vam',
+		user: process.env.SMTP_USER || '',
 		pass: process.env.SMTP_PASS || '',
-		fromName: process.env.SMTP_FROM_NAME || 'VamShop',
-		fromAddress: process.env.SMTP_FROM_ADDRESS || 'vam@test.com'
+		fromName: process.env.SMTP_FROM_NAME || '',
+		fromAddress: process.env.SMTP_FROM_ADDRESS || ''
 	},
 
 	// key to sign tokens
